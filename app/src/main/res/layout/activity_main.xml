@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginStart="@dimen/layoutMargin"
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:layout_marginEnd="@dimen/layoutMargin"
+        android:layout_marginBottom="@dimen/layoutMargin">
+
+        <Button
+            android:id="@+id/btnAddCustomer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnMargin"
+            android:text="Add Customer"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTowns"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnMargin"
+            android:text="Towns"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnAddCustomer"
+            app:layout_constraintStart_toStartOf="@+id/btnAddCustomer"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddCustomer" />
+
+        <Button
+            android:id="@+id/btnCustomers"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnMargin"
+            android:text="Customers"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/btnTowns"
+            app:layout_constraintStart_toStartOf="@+id/btnTowns"
+            app:layout_constraintTop_toBottomOf="@+id/btnTowns" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

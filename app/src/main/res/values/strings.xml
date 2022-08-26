@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Francis Customers Data</string>
+    <string name="txtViewName">Name</string>
+    <string name="txtViewTown">Town</string>
+    <string name="txtViewContact">Contact</string>
+    <string name="txtViewAddress">Address</string>
+    <string name="txtViewOtherNames">Other Names</string>
+    <string name="txtViewPartnerName">Partner\'s Name</string>
+    <string name="txtViewFatherName">Father\'s Name</string>
+    <string name="txtViewMotherName">Mother\'s Name</string>
+
+</resources>

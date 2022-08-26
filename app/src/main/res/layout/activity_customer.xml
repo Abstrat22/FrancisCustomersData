@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity">
+
+
+    <ImageView
+        android:id="@+id/imgCustomer"
+        android:layout_width="@dimen/imgViewLayoutSize"
+        android:layout_height="@dimen/imgViewLayoutSize"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/txtTown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewTown"
+        app:layout_constraintEnd_toEndOf="@+id/txtContact"
+        app:layout_constraintStart_toStartOf="@+id/txtContact"
+        app:layout_constraintTop_toBottomOf="@+id/txtContact" />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewContact"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewAddress"
+        app:layout_constraintEnd_toEndOf="@+id/txtTown"
+        app:layout_constraintStart_toStartOf="@+id/txtTown"
+        app:layout_constraintTop_toBottomOf="@+id/txtTown" />
+
+    <TextView
+        android:id="@+id/txtOtherNames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewOtherNames"
+        app:layout_constraintEnd_toEndOf="@+id/txtAddress"
+        app:layout_constraintStart_toStartOf="@+id/txtAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+    <TextView
+        android:id="@+id/txtPartner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewPartnerName"
+        app:layout_constraintEnd_toEndOf="@+id/txtOtherNames"
+        app:layout_constraintStart_toStartOf="@+id/txtOtherNames"
+        app:layout_constraintTop_toBottomOf="@+id/txtOtherNames" />
+
+    <TextView
+        android:id="@+id/txtMother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewMotherName"
+        app:layout_constraintEnd_toEndOf="@+id/txtFather"
+        app:layout_constraintStart_toStartOf="@+id/txtFather"
+        app:layout_constraintTop_toBottomOf="@+id/txtFather" />
+
+    <TextView
+        android:id="@+id/txtFather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewFatherName"
+        app:layout_constraintEnd_toEndOf="@+id/txtPartner"
+        app:layout_constraintStart_toStartOf="@+id/txtPartner"
+        app:layout_constraintTop_toBottomOf="@+id/txtPartner" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txtViewMargin"
+        android:text="@string/txtViewName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="153dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

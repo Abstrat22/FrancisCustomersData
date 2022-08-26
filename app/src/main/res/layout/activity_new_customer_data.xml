@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCustomerDataActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVName"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtViewContact"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtContact"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtContact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtContact" />
+
+    <EditText
+        android:id="@+id/edtTxtStreetAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtName"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/txtVStreetAddress"
+        android:autoText="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtContact"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtContact"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtContact" />
+
+    <TextView
+        android:id="@+id/txtVTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtViewTown"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtTown"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtTown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtTown" />
+
+    <TextView
+        android:id="@+id/txtVName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVTown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtViewName"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtName"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtName" />
+
+    <TextView
+        android:id="@+id/txtVStreetAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVName"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtViewAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtStreetAddress"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtStreetAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtStreetAddress" />
+
+    <EditText
+        android:id="@+id/edtTxtTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/txtVTown"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxtTown"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/txtVName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtTown"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtTown"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtTown" />
+
+    <EditText
+        android:id="@+id/edtTxtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtName"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/txtVStreetAddress"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtName" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtFather"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtFather"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtFather" />
+
+
+
+    <EditText
+        android:id="@+id/edtTxtPartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Partner's Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/chkBoxSingle" />
+
+    <EditText
+        android:id="@+id/edtTxtMother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mother's name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtPartner"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtPartner"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPartner" />
+
+    <EditText
+        android:id="@+id/edtTxtFather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Father's name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtMother"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtMother"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtMother" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optional Information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txtViewOtherNames"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTxtOtherNames"
+        app:layout_constraintEnd_toStartOf="@+id/edtTxtOtherNames"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTxtOtherNames" />
+
+    <EditText
+        android:id="@+id/edtTxtOtherNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtStreetAddress"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtStreetAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtStreetAddress" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="241dp" />
+
+    <CheckBox
+        android:id="@+id/chkBoxMarried"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Married"
+        app:layout_constraintBottom_toBottomOf="@+id/chkBoxSingle"
+        app:layout_constraintEnd_toStartOf="@+id/chkBoxSingle"
+        app:layout_constraintTop_toTopOf="@+id/chkBoxSingle" />
+
+    <CheckBox
+        android:id="@+id/chkBoxSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Single"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
